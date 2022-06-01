@@ -152,8 +152,13 @@ Paciente.prototype.setDiagnOstico = function(new_diagnostic){
 //
 //
   //  *******  INICIO  EJECUCION  DE  CODIGO  *******  //
+//
 // Crear Consultorio:
 let clinica = new Consultorio("Jose Gregorio")
+console.log("Contenido inicial del Arreglo de Pacientes:")
+console.log(`Array length = ${clinica.getPacientes().length}`)
+console.log(clinica.getPacientes())
+//
 // Crear Pacientes:
 let p1 = new Paciente("Juan", 47, "25123653-6")
 let p2 = new Paciente("María", 43, "25123421-6")
@@ -163,8 +168,6 @@ let p5 = new Paciente("Peter", 30,"19123009-1")
 let p6 = new Paciente("Sherlock", 57,"6123597-4")
 let p7 = new Paciente("Watson", 51,"7123710-K")
 // Añadir pacientes al Consultorio:
-    console.log("Contenido inicial del Arreglo de Pacientes:")
-    console.log(clinica.getPacientes())
 //
 clinica.addPaciente(p1)
 clinica.addPaciente(p2)
